@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Me</title>
+<link href="about_me.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+<link href="about_me_tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max_width:960px)">
+<link href="about_me_phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>About Me...</h1>
+        <div id="left-column">
+            <img src="about_me_img.png" alt="About Me Image" width="75%" height="75%">
+        </div>
+        <div id="right-column">
+            <article>
+            <h3>Who am I?</h3>
+                <p>To put it simply, just some dude. My name is Phill and I am learning HTML at the moment.
+                    I am a second year Networking and IT Security student, i'm finding it pretty fun putting
+                    animations on images and using HTML is more fun than I expected.
+                    <br><br>
+                    Let me know any way to improve my webpages, I am very new to html and css so any help
+                    is appreciated! :)
+                </p>
+            </article>
+        </div>
+    </div>
+    <div id="video_section">
+        <h2>Watch my video!</h2>
+        <video width="75%" height="60%" controls muted controls poster="homepageimg.jpg" loop id="video">
+            <source src="about_me_vid.mp4" type="video/mp4">
+        </video>
+        <br>
+        <button onclick="playPause()">⏯</button>
+        <script>
+            var myVideo=document.getElementById("video");
+            function playPause()
+            {
+                if (myVideo.paused)
+                myVideo.play();
+                else myVideo.pause();
+            }
+        </script>
+        <footer>
+            <address>
+            <p>Contact me at <a href="philip.dimitroulakos@ontariotechu.net">my e-mail</a>, &copy Phillip D.</p>
+        </address></footer>
+    </div>
+</body>
+</html>
