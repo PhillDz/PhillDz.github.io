@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(45deg, #A2D729, #3C91E6);;
+}
+
+#wrapper {
+    background-color: #dcd8de;
+    width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 20px;
+}
+#Restaurant {
+    width: 100%;
+    height: 80%;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
